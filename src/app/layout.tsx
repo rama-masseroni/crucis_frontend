@@ -1,6 +1,8 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+"use client";
+import { ThemeProvider } from "@mui/material/styles";
 import "../styles/globals.css";
+
+import { rootTheme } from "../styles/muiGiobals";
 
 export default function RootLayout({
   children,
@@ -10,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <ThemeProvider theme={rootTheme}>{children}</ThemeProvider>
       </body>
     </html>
   );
