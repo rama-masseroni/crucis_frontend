@@ -11,6 +11,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Crucis</title>
+      </head>
+
       <body>
         <ThemeProvider theme={rootTheme}>{children}</ThemeProvider>
       </body>
