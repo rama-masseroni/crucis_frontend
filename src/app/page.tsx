@@ -1,54 +1,32 @@
-import Image from "next/image";
-import styles from "../styles/page.module.css";
-import RootLayout from "@/layouts/RootLayout";
+"use client";
+import { Typography } from "@mui/material";
 
+import styles from "../styles/page.module.css";
 export default function Home() {
+  // const router = useRouter();
+
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     router.push("/login");
+  //   }, 3000);
+  //   //eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
+
   return (
-    <RootLayout>
+    <div>
       <div className={styles.page}>
         <main className={styles.main}>
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            alt="Crucis EKG logo"
             className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
+            src="/assets/svg/ekg_line.svg"
           />
-          <ol>
-            <li>
-              Get started by editing <code>src/app/page.tsx</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
-
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Deploy now
-            </a>
-            <a
-              href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.secondary}
-            >
-              Read our docs
-            </a>
-          </div>
+          <Typography style={{ zIndex: 10 }} variant="title">
+            CRUCIS
+          </Typography>
         </main>
       </div>
-    </RootLayout>
+    </div>
   );
 }
