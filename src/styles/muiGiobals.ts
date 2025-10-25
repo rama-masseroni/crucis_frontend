@@ -150,4 +150,12 @@ export const rootTheme = createTheme({
       color: crucisPalette.primary.contrastText,
     },
   },
+
+  components: {
+    MuiStack: {
+      defaultProps: {
+        flex: 1,
+      },
+    },
+  },
 });
