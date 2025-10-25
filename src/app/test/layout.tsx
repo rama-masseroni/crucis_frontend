@@ -11,6 +11,7 @@ export default function HomeLayout({
   children: React.ReactNode;
 }>) {
   useEffect(() => {
+    //TODO create storage hook
     localStorage.setItem("name", "Ramiro");
   }, []);
 
