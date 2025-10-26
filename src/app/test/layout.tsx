@@ -16,9 +16,11 @@ export default function HomeLayout({
   }, []);
 
   return (
-    <Stack spacing={1}>
+    <Stack flex={1} spacing={1}>
       <Header />
-      <Stack padding={"0 1rem 0.75rem"}>{children}</Stack>
+      <Stack flex={1} padding={"0 1rem 0.75rem"}>
+        {children}
+      </Stack>
     </Stack>
   );
 }
