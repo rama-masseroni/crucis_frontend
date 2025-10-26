@@ -25,6 +25,7 @@ main {
 }
 
 header {
+  width: 100%;
   padding: 1rem;
   background: linear-gradient(
     to bottom,
